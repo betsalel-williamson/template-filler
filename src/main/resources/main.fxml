@@ -19,8 +19,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<TabPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
-         fx:controller="com.templateFiller.MainController" fx:id="mainWindow">
+<TabPane fx:id="mainWindow" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.templateFiller.MainController">
    <tabs>
       <Tab closable="false" text="Contact Info">
          <content>
@@ -54,13 +53,10 @@
                                       </rowConstraints>
                                        <children>
                                            <Label text="Company" />
-                                           <TextField fx:id="yourCompanyTxt"
-                                                      text="%templateFiller.settings.mainTab.yourCompany.default"
-                                                      GridPane.columnIndex="1" />
+                                           <TextField fx:id="yourCompanyTxt" text="%templateFiller.settings.mainTab.yourCompany.default" GridPane.columnIndex="1" />
 
                                            <Label text="Title" GridPane.rowIndex="1" />
-                                           <TextField fx:id="yourTitleTxt"
-                                                      text="%templateFiller.settings.mainTab.yourTitle.default" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                           <TextField fx:id="yourTitleTxt" text="%templateFiller.settings.mainTab.yourTitle.default" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
                                            <Label text="First Name" GridPane.rowIndex="2" />
                                            <TextField fx:id="yourFirstNameTxt" text="%templateFiller.settings.mainTab.yourFirstName.default" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -107,8 +103,7 @@
                                            <TextField fx:id="theirCompanyTxt" text="%templateFiller.settings.mainTab.theirCompany.default" GridPane.columnIndex="1" />
             
                                            <Label text="Title" GridPane.rowIndex="1" />
-                                          <TextField fx:id="theirTitleTxt"
-                                                     text="%templateFiller.settings.mainTab.theirTitle.default" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="theirTitleTxt" text="%templateFiller.settings.mainTab.theirTitle.default" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
                                            <Label text="First Name" GridPane.rowIndex="2" />
                                            <TextField fx:id="theirFirstNameTxt" text="%templateFiller.settings.mainTab.theirFirstName.default" GridPane.columnIndex="1" GridPane.rowIndex="2" />
@@ -181,7 +176,8 @@
                <children>
                   <TableView fx:id="urlTable" editable="true" prefHeight="375.0" prefWidth="800.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn text="URLs" />
+                        <TableColumn prefWidth="144.0" text="Document Type" />
+                        <TableColumn prefWidth="655.0" text="URLs" />
                     </columns>
                   </TableView>
                </children>

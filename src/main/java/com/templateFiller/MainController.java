@@ -142,7 +142,7 @@ public class MainController implements Initializable {
 //			// Do it...
 //			Object obj = XmlUtils.unmarshallFromTemplate(xml, mappings);
 //			// Inject result into docx
-//			documentPart.setJaxbElement((Document) obj);
+//			documentPart.setJaxbElement((TemplateDocument) obj);
 
         // Save it
         wordMLPackage.save(new File(outputFileName));
