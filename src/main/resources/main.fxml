@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<TabPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="com.templateFiller.MainController" fx:id="mainWindow">
+   <tabs>
+      <Tab closable="false" text="Contact Info">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="800.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <VBox prefHeight="398.0" prefWidth="263.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label text="Your Information">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Separator prefWidth="200.0" />
+                                    <GridPane fx:id="yourInfo">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                           <Label text="Company" />
+                                           <TextField fx:id="yourCompanyTxt"
+                                                      text="%templateFiller.settings.mainTab.yourCompany.default"
+                                                      GridPane.columnIndex="1" />
+
+                                           <Label text="Title" GridPane.rowIndex="1" />
+                                           <TextField fx:id="yourTitleTxt"
+                                                      text="%templateFiller.settings.mainTab.yourTitle.default" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                                           <Label text="First Name" GridPane.rowIndex="2" />
+                                           <TextField fx:id="yourFirstNameTxt" text="%templateFiller.settings.mainTab.yourFirstName.default" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                                           <Label text="Last Name" GridPane.rowIndex="3" />
+                                           <TextField fx:id="yourLastNameTxt" text="%templateFiller.settings.mainTab.yourLastName.default" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                                           <Label text="Nick Name" GridPane.rowIndex="4" />
+                                           <TextField fx:id="yourNickNameTxt" text="%templateFiller.settings.mainTab.yourNickName.default" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                                          <Label text="Phone" GridPane.rowIndex="5" />
+                                          <TextField fx:id="yourPhoneNumberTxt" text="%templateFiller.settings.mainTab.yourPhoneName.default" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+                                          <Label text="Email" GridPane.rowIndex="6" />
+                                          <TextField fx:id="yourEmailTxt" text="%templateFiller.settings.mainTab.yourEmailAddress.default" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <VBox prefHeight="398.0" prefWidth="327.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label text="Their Information">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Separator prefWidth="200.0" />
+                                    <GridPane fx:id="theirInfo">
+                                       <children>
+            
+            
+                                           <Label text="Company" />
+                                           <TextField fx:id="theirCompanyTxt" text="%templateFiller.settings.mainTab.theirCompany.default" GridPane.columnIndex="1" />
+            
+                                           <Label text="Title" GridPane.rowIndex="1" />
+                                          <TextField fx:id="theirTitleTxt"
+                                                     text="%templateFiller.settings.mainTab.theirTitle.default" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                                           <Label text="First Name" GridPane.rowIndex="2" />
+                                           <TextField fx:id="theirFirstNameTxt" text="%templateFiller.settings.mainTab.theirFirstName.default" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                                           <Label text="Last Name" GridPane.rowIndex="3" />
+                                           <TextField fx:id="theirLastNameTxt" text="%templateFiller.settings.mainTab.theirLastName.default" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                                           <Label text="Nick Name" GridPane.rowIndex="4" />
+                                           <TextField fx:id="theirNickNameTxt" text="%templateFiller.settings.mainTab.theirNickName.default" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                                           <Label text="Phone" GridPane.rowIndex="5" />
+                                           <TextField fx:id="theirPhoneNumberTxt" text="%templateFiller.settings.mainTab.theirPhoneName.default" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+                                           <Label text="Email" GridPane.rowIndex="6" />
+                                           <TextField fx:id="theirEmailTxt" text="%templateFiller.settings.mainTab.theirEmailAddress.default" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            
+                                           <Label text="How you met" GridPane.rowIndex="7" GridPane.valignment="TOP">
+                                               <GridPane.margin>
+                                                   <Insets top="5.0" />
+                                               </GridPane.margin>
+                                           </Label>
+            
+                                           <TextArea fx:id="howYouMetTxt" prefHeight="200.0" prefWidth="200.0" text="%templateFiller.settings.mainTab.howYouMet.default" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                             <GridPane.margin>
+                                                <Insets bottom="3.0" top="3.0" />
+                                             </GridPane.margin>
+                                          </TextArea>
+            
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                                       </columnConstraints>
+                                       <padding>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </padding>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <VBox.margin>
+                                          <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                       </VBox.margin>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <FlowPane alignment="CENTER_RIGHT" hgap="5.0" vgap="5.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" text="To PDF" />
+                        <Button mnemonicParsing="false" onAction="#generateReport" text="Generate" />
+                     </children>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab closable="false" text="Document URLs">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="urlTable" editable="true" prefHeight="375.0" prefWidth="800.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn text="URLs" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</TabPane>
