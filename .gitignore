@@ -1,0 +1,10 @@
+build
+out
+*.iml
+*.ipr
+*.iws
+.idea
+.gradle
+
+log4j-application.log
+!LICENSE.txt
